@@ -1,0 +1,15 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    environment:
+      NODE_ENV: production
+    command: sh -c "node jobProcessor.js & node server.js" # Add this line
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
