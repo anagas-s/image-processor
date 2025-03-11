@@ -58,11 +58,11 @@ The **Image Processor** is a Node.js-based application designed to process image
 
 ```
 
-The server will start on http://localhost:3000. 6. Test the API:
+The server will start on http://localhost:3000.
+
+6. Test the API:
 
 ```bash
-
-```
 
 # Submit a job
 
@@ -82,8 +82,6 @@ curl -X POST http://localhost:3000/api/submit \
 # Check job status
 
 curl http://localhost:3000/api/status?jobid=<job_id>
-
-```
 
 ```
 
