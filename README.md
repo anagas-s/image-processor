@@ -104,9 +104,13 @@ Prerequisites
  docker-compose up --build
 ```
 
-This will:
-. Start a Redis container.
-. Build and run the nodejs application container. 3. Test the API as described above. 4. View logs:
+**This will:**
+
+- Start a Redis container.
+- Build and run the nodejs application container.
+
+3. Test the API as described above.
+4. View logs:
 
 ```bash
 docker logs image-processor-app-1 --follow
@@ -114,16 +118,16 @@ docker logs image-processor-app-1 --follow
 
 # Work Environment
 
-Operating System :Windows 11
-Text Editor/IDE : Visual Studio Code.
-Libraries :
-express: For creating the API server.
-bullmq: For background job processing.
-axios: For downloading images.
-image-size: For calculating image dimensions.
-csv-parser: For parsing the store master CSV file.
-Database : Redis (in-memory data store for job queue).
-Testing Tools : Postman for API testing.
+- **Operating System** :Windows 11
+- **Text Editor/IDE** : Visual Studio Code.
+- **Libraries** :
+
+1. _express_: For creating the API server.
+2. _bullmq_: For background job processing.
+3. _axios_: For downloading images.
+4. _image-size_: For calculating image dimensions.
+5. _csv-parser_: For parsing the store master CSV file.
+6. _Database_ : Redis (in-memory data store for job queue).
 
 # Future Improvements
 
